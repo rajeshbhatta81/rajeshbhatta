@@ -1,65 +1,181 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
          <title> 
-	Rajesh Bhata
-		 </title>   
+		 Rajesh Bhatta 
+		 </title>
 <style>
+         *{
+            margin: 0;
+            padding: 0;
+            font-family: 'poppins', sans-serif;
+            box-sizing: border-box;
+        }
+        
+        .footer{
+            margin-top: 150px;
+            width: 100%;
+            padding: 100px 15%;
+            background: #333;
+            color: #efefef;
+            display: flex;
+        }
+
+        .footer div{
+            text-align: center;
+        }
+		 
+        .col-2{
+            flex-grow: 2;
+        }
+        .footer div h3{
+            font-weight: 300;
+            margin-bottom: 30px;
+            letter-spacing: 1px;
+        }
+/*mentainence baki xa */
+        .col-1 a{
+            display: block;
+            text-decoration: none;
+            color: #efefef;
+            margin-bottom: 20px;
+        }
+/*suggestion box milauna baki xa */
+    form  input{
+        width: 400px;
+        height: 45px;
+        border-radius: 4px;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 40px;
+        outline: none;
+        border: none;
+    }
+    .feedback{
+        width: 400px;
+        height: 300px;
+        border-radius: 15px;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 40px;
+        outline: none;
+        border: none;   
+    }
+    /*button ma effect rekhna baki xa */
+    form button{
+        background: transparent;
+        border: 2px solid blueviolet;
+        color: whitesmoke;
+        background-color: blue;
+        border-radius:  30px;
+        padding: 10px 30px;
+        font-size: 15px;
+        cursor: pointer;
 
 
-img{
-height:200px;
-width:200px;
-border:solid;color:green;
-border-radius:50px 5px 50px 5px;
-padding-top:0px;
+    }
+
+.header {
+    overflow: hidden;
+    background-color: blanchedalmond;
+    padding: 20px 10px;
+}
+.header a {
+float: left;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: double;
+    font-size: 18px;
+    line-height: 25px;
+border-radius: 5px;
+
+}
+/* its not working 
+.header a .logo {
+    font-size: 18px;
+    font-weight: 600;
+}
+*/
+
+.header a:hover {
+    background-color: green;
+    color: aqua;
+}
+.header a.active {
+    background-color: aqua;
+    color: yellowgreen;   
 }
 
-body{
-background-color:lightBlue;
-}
-	body{
-background-image:linear-gradient(-90deg, sandyBrown, lightBlue,lightBlue, lightBlue, sandyBrown);
-border-radius:0 0 100px 0;
+.header-right {
+    float: right;
 }
 
-nav{
-width:100%;
-display:flex;
-align-items: center;
-justify-content: space-between;
-padding: 20px 0;
+@media  screen and (max-width: 500px) {
+    .header a {
+        float: none;
+        display: block;
+        text-align: left;
+    
+    }
+    .header-right {
+        float: none;
+
+    }
+.footer  {
+    float: none;
+        display: block;
+        text-align: left;
 
 }
-
-nav ul li {
-display : inline-block;
-list style: none;
-margin: 10px 30px;
-
-}
-
-nav ul li  a{
-
-text-decoration:none;
-color:#3f51b5;
-
-
-
-}
-
-p{
-color: green;
-}
-
  
+}
 
-</style>		 
 
+
+        </style>
 </head>
 <body>
 
+<div class="header">
+<a href="#default" class="logo">my logo </a>
+
+<div class="header-right">
+
+<a href="#home">HOME</a>
+<a href="#contacr">CONTACT</a>
+<a href="about">ABOUT</a>
+
+</div>
+</div>
+
+
+
+
+
+<div class="footer">
+    <div class="col-1">
+        <h3>VISIT</h3>
+        <a href="#">PROJECTS</a>
+        <a href="#">REQUEST TO BUILD WEB</a>
+        <a href="#">MY GITHUB</a>
+        <a href="#">FOLLOW ME</a>
+    </div>
+    <div class="col-2">
+        <h3>IN TOUCH</h3>
+        <form>
+            <input class="feedback" type="text" placeholder="any suggestion/feedback" aria-required="true">
+<input type="email" placeholder="your email adres" required> <br>
+<button type="submit">SEND NOW</button>
+
+        </form>
+    </div> <br> <br>
+    <div class="col-3">
+        <h3>ADRESS INFO</h3>
+        <p>kathmandu,Nepal</p> <br>
+        <p>Bagmati province </p>
+    </div>
 
 
 
@@ -67,34 +183,6 @@ color: green;
 
 
 
-<center><div class="header">
-<nav>
-<ul>
-<li> <a href="home.html">HOME</a> </li>
-<li> <a href="about.html">NOTICE/NOTES</a> </li>
-<li> <a href="contact.html">INFO</a> </li>
-<li> <a href="contactus.html">CONTACT US</a> </li>
-</ul>
-</nav>
-</div></center>
-
-
-
-
-<br>
-<br>
-
-<center><img src="https://lh3.googleusercontent.com/o41YV4WHmVIwlAoP3KNpcj7WKvssa8Sbtf3ubUylgXEFdK_rxhrSl-GUbzQGMR5NJM6h98DzO6YxmLWTS6LMCNHfXYTR_FbMcj09Jbz99uBKY7ZU0ws5Pgf0iWspU17ifIMHhxoQhrWv4KsvI7mfz5S6XM8l4x26yG8YPa93dNn6DGFyYOOOr35hfxbHEAPSb9dQBZ0IQ5srSi2lG_k7gVFPRln8RKvdtZQuzZOTpD4oW4K62GJC2Iyz-hMgjAjDfK_xgIcyobLRRbE7_ELswi7A1DiVqXWvps5gQmokcck-dBawZpfWyj9YJllHNW0aerOyc1fh4milPJVuAVR5uphmVUlBx9Ifk3Pg91dipyy04kfs8sr0EsTQx8TI8nVT7K54J1gqShJHlKu0g5oCIs9HZUeFcqDrVSYgLXnRE2J7CdOM7UJFaWoy4MugZLVtMDO1HPUDC2gk5SOSOKyrrT7kyuSST_nShPVtRL3HYmEZH3il0lyzBltYJXR6n--GPOuidJdvPEK8BGV27HEcYdc-VTlqXDs9eC8I-k9ouGfUpEuT2fXqzCAgMH0e2Xi4lSUja58yHrHuFlRVA4GCLx64Qb8LJawqHLn3Vb_B6unriuJN3DrbuuvQ3d1YjyGP3cJ2XThg_5fCYWv_yhTrNZvzLwm-K47KznGtFAPZ80EKwRFAGDqH_8abjieqJCZo_ntIsIvpAhAtrFdsKWJrHjuTMnCg7chgOA-GlUg8NEE7AAI6rdt0cs3LZFkz2p0=w172-h179-no?authuser=0">  </center>
-
-<br>
-<br>
- 
-<center><div class="text-box">
-<details> 
-         <summary>Nature Is the world around us </summary>
-<p> All the human beings depend on nature every time and for every thing<br>. Nature refers to the phenomena of physical world.  The study of nature<br> is large and part of science too. </p>
-</details>
-</div></center>
 
 
 
