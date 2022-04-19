@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.footer{
+    margin-top: 150px;
+    width: 100%;
+    padding: 100px 15%;
+    background: #333;
+    color: #efefef;
+    display: flex;
+}
+
+.footer div{
+    text-align: center;
+}
+ 
+.col-2{
+    flex-grow: 2;
+}
+.footer div h3{
+    font-weight: 300;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+/*mentainence baki xa */
+.col-1 a{
+    display: block;
+    text-decoration: none;
+    color: #efefef;
+    margin-bottom: 20px;
+}
+/*suggestion box milauna baki xa */
+form  input{
+width: 400px;
+height: 45px;
+border-radius: 4px;
+text-align: center;
+margin-top: 20px;
+margin-bottom: 40px;
+outline: none;
+border: none;
+}
+.feedback{
+width: 400px;
+height: 300px;
+border-radius: 15px;
+text-align: center;
+margin-top: 20px;
+margin-bottom: 40px;
+outline: none;
+border: none;   
+}
+/*button ma effect rekhna baki xa */
+form button{
+background: transparent;
+border: 2px solid blueviolet;
+color: whitesmoke;
+background-color: blue;
+border-radius:  30px;
+padding: 10px 30px;
+font-size: 15px;
+cursor: pointer;
+
+
+}
+
+.header {
+overflow: hidden;
+background-color: blanchedalmond;
+padding: 20px 10px;
+}
+.header a {
+float: left;
+color: black;
+text-align: center;
+padding: 12px;
+text-decoration: double;
+font-size: 18px;
+line-height: 25px;
+border-radius: 5px;
+
+}
+/* its not working 
+.header a .logo {
+font-size: 18px;
+font-weight: 600;
+}
+*/
+
+.header a:hover {
+background-color: rgb(0, 128, 0);
+color: aqua;
+}
+.header a.active {
+background-color: aqua;
+color: yellowgreen;   
+}
+
+.header-right {
+float: right;
+}
+
+.image {
+    height: fit-content;
+    width: fit-content;
+    float: right;
+}
+
+h1 {
+    text-align: start;
+    color: rgb(38, 0, 255);
+    font-size: 100px;
+    text-shadow: 2px 2px rgb(224, 16, 16);
+}
+p{
+    color: darkorange;
+    text-decoration: double;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h2 {
+    color:red;
+}
+.logo {
+    border-radius: 110px;
+    border: 2px green;
+}
+
+@media  screen and (max-width: 500px) {
+.header a {
+float: none;
+display: block;
+text-align: left;
+
+}
+.header-right {
+float: none;
+
+}
+.footer  {
+float: none;
+display: block;
+text-align: left;
+
+}
+
+.image{
+    padding: 0, 0, 100px,;
+}
+
+}
